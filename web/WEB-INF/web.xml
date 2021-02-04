@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>RegisterStudentServlet</servlet-name>
+        <servlet-class>controller.RegisterStudentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginStudentServlet</servlet-name>
+        <servlet-class>controller.LoginStudentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChangePassWordStudentServlet</servlet-name>
+        <servlet-class>controller.ChangePassWordStudentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginAdminServlet</servlet-name>
+        <servlet-class>controller.LoginAdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterStudentServlet</servlet-name>
+        <url-pattern>/registerStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginStudentServlet</servlet-name>
+        <url-pattern>/loginStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangePassWordStudentServlet</servlet-name>
+        <url-pattern>/changePassStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginAdminServlet</servlet-name>
+        <url-pattern>/logiAdmin</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

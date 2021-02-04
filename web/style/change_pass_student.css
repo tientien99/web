@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 2, 2021, 10:40:25 AM
+    Author     : tienm
+*/
+.pass_show{position: relative} 
+
+.pass_show .ptxt { 
+
+      position: absolute; 
+
+      top: 50%; 
+
+      right: 10px; 
+
+      z-index: 1; 
+
+      color: #f36c01; 
+
+      margin-top: -10px; 
+
+      cursor: pointer; 
+
+      transition: .3s ease all; 
+
+} 
+
+.pass_show .ptxt:hover{color: #333333;} 
+
